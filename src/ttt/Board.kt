@@ -11,9 +11,8 @@ class Board {
         }.toIntArray()
     }
 
-
     fun make_move(idx: Int) {
-        assert(board[idx] == 1 || idx < 0 || idx > 8)
+        assert(board[idx] == 1 || idx < 0 || idx > 8 || list_moves().count() < 1)
         board[idx] = 1
     }
 
